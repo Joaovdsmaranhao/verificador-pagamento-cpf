@@ -1,4 +1,4 @@
-# Automa-o-de-Verifica-o-de-Pagamento-via-CPF
+# verificador de pagamento por cpf
 
 Este projeto automatiza a consulta do status de pagamento de clientes a partir de uma planilha Excel, usando Selenium para acessar um site de consulta pública.
 
@@ -27,5 +27,5 @@ Este projeto automatiza a consulta do status de pagamento de clientes a partir d
 
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/Joaovdsmaranhao/Automa-o-de-Verifica-o-de-Pagamento-via-CPF.git
-   cd Automa-o-de-Verifica-o-de-Pagamento-via-CPF
+   git clone https://github.com/Joaovdsmaranhao/verificador-pagamento-cpf.git
+   cd verificador-pagamento-cpf
