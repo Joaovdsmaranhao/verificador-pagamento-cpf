@@ -15,18 +15,18 @@ driver.get('https://consultcpf-devaprender.netlify.app/')
 for linha in pagina_clientes.iter_rows(min_row=2,values_only=True):
     nome, valor, cpf, vencimento = linha
 
-    sleep(1)
+    sleep(4)
     # Localiza o campo de pesquisa do CPF, limpa e insere o CPF do cliente
     campo_pesquisa = driver.find_element(By.XPATH,'//input[@id="cpfInput"]')
     campo_pesquisa.clear()
-    sleep(1)
+    sleep(4)
     campo_pesquisa.send_keys(cpf)
-    sleep(1)
+    sleep(4)
 
     # Clica no botão de pesquisa e aguarda o carregamento dos resultados
     pesquisar = driver.find_element(By.XPATH,"//button[@class='btn btn-custom btn-lg btn-block mt-3']")
     pesquisar.click()
-    sleep(2)
+    sleep(4)
 
     # Captura o texto do campo de status para verificar se o cliente está em dia ou pendente
     status = driver.find_element(By.XPATH,'//span[@id="statusLabel"]')
@@ -52,4 +52,5 @@ for linha in pagina_clientes.iter_rows(min_row=2,values_only=True):
         pagina_fechamento = planilha_fechamento['Sheet1']
 
         pagina_fechamento.append([nome,valor,cpf,vencimento,'Pendente'])
+
         planilha_fechamento.save('planilha fechamento.xlsx')
