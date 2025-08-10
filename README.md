@@ -4,6 +4,12 @@ Este projeto automatiza a consulta do status de pagamento de clientes a partir d
 
 ---
 
+# Aviso sobre os dados
+Atenção:
+Todos os dados presentes na planilha dados_clientes.xlsx são fictícios e utilizados apenas para fins de teste e demonstração.
+Não há dados pessoais reais neste repositório.
+
+
 ## Funcionalidades
 
 - Lê dados (Nome, Valor, CPF, Vencimento) da planilha `dados_clientes.xlsx`.
