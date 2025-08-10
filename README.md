@@ -1,4 +1,4 @@
-# verificador de pagamento por cpf
+# VERIFICADOR DE PAGEMENTO POR CPF
 
 Este projeto automatiza a consulta do status de pagamento de clientes a partir de uma planilha Excel, usando Selenium para acessar um site de consulta pública.
 
