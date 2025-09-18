@@ -57,6 +57,7 @@ O programa irá gerar a planilha planilha fechamento.xlsx com os resultados.
 Clone este repositório:
 
 git clone https://github.com/Joaovdsmaranhao/verificador-pagamento-cpf
+
 cd verificador-pagamento-cpf
 
 
