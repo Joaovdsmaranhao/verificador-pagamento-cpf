@@ -1,37 +1,83 @@
-# VERIFICADOR DE PAGEMENTO POR CPF
+🔎 Verificador de Pagamento por CPF
 
-Este projeto automatiza a consulta do status de pagamento de clientes a partir de uma planilha Excel, usando Selenium para acessar um site de consulta pública.
+Projeto que automatiza a consulta do status de pagamento de clientes a partir de uma planilha Excel, utilizando Python + Selenium.
 
----
+Disponível em duas formas de execução:
 
-# Aviso sobre os dados
-Atenção:
-Todos os dados presentes na planilha dados_clientes.xlsx são fictícios e utilizados apenas para fins de teste e demonstração.
+✅ Executável (.exe).
+
+💻 Código-fonte em Python.
+
+⚠️ Aviso sobre os dados
+
+Todos os dados presentes na planilha dados_clientes.xlsx são fictícios, utilizados apenas para fins de teste e demonstração.
 Não há dados pessoais reais neste repositório.
 
+📌 Funcionalidades
 
-## Funcionalidades
+Lê informações (Nome, Valor, CPF, Vencimento) da planilha dados_clientes.xlsx.
 
-- Lê dados (Nome, Valor, CPF, Vencimento) da planilha `dados_clientes.xlsx`.
-- Consulta o status de pagamento de cada CPF no site [consultcpf-devaprender.netlify.app](https://consultcpf-devaprender.netlify.app/).
-- Registra os resultados (status, método e data do pagamento) em uma planilha `planilha fechamento.xlsx`.
-- Marca clientes com pagamento pendente separadamente.
+Consulta automaticamente o status de pagamento de cada CPF no site público consultcpf-devaprender.netlify.app
+.
 
----
+Registra os resultados (status, método e data do pagamento) em uma nova planilha planilha fechamento.xlsx.
 
-## Tecnologias Utilizadas
+Separa clientes com pagamento pendente.
 
-- Python 3.8+
-- Bibliotecas:
-  - `openpyxl` para manipulação de planilhas Excel.
-  - `selenium` para automação do navegador Chrome.
-- Google Chrome + ChromeDriver compatível instalado.
+🚀 Tecnologias Utilizadas
 
----
+Python 3.8+
 
-## Como executar
+Bibliotecas:
 
-1. Clone este repositório:
-   ```bash
-   git clone https://github.com/Joaovdsmaranhao/verificador-pagamento-cpf.git
-   cd verificador-pagamento-cpf
+openpyxl → manipulação de planilhas Excel
+
+selenium → automação do navegador Chrome
+
+Empacotamento: PyInstaller (geração do .exe)
+
+Ambiente de execução: Google Chrome + ChromeDriver (necessário apenas no modo código-fonte)
+
+▶️ Como executar
+🔹 Opção 1 — Usando o Executável
+
+Baixe este repositório.
+
+Entre na pasta dist/.
+
+Execute app.exe.
+
+Certifique-se de que a planilha dados_clientes.xlsx esteja na mesma pasta.
+
+O programa irá gerar a planilha planilha fechamento.xlsx com os resultados.
+
+
+🔹 Opção 2 — Rodando o Código-Fonte
+
+Clone este repositório:
+
+git clone https://github.com/Joaovdsmaranhao/verificador-pagamento-cpf
+cd verificador-pagamento-cpf
+
+
+Instale as dependências:
+
+pip install -r requirements.txt
+
+
+Execute o script:
+
+python app.py
+
+📂 Estrutura do Projeto
+verificador-pagamento-cpf/
+│── build
+│   └── ...
+│── dist/                      
+│   └── app.exe  ( Executavel) 
+│   └── planilha fechamento.xlsx  
+│   └── dados_clientes.xlsx  
+│── app.py                   
+│── app.spec
+│── README.md   
+│── requirements.txt         
