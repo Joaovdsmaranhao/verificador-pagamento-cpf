@@ -72,11 +72,17 @@ python app.py
 
 📂 Estrutura do Projeto
 verificador-pagamento-cpf/
+
 │── build
+
 │   └── ...
-│── dist/                      
-│   └── app.exe  ( Executavel) 
-│   └── planilha fechamento.xlsx  
+
+│── dist/ 
+
+│   └── app.exe ( Executavel)
+
+│   └── planilha fechamento.xlsx 
+
 │   └── dados_clientes.xlsx  
 │── app.py                   
 │── app.spec
